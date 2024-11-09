@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Download Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .app-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .app-box img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 36px;
+    }
+
+    .app-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .app-description {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .android-btn {
+      background-color: #3ddc84;
+    }
+
+    .ios-btn {
+      background-color: #007aff;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .app-box img {
+        max-width: 80px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Download Applications</h1>
+
+    <div class="apps-grid">
+      
+
+	      <!-- App 1 -->
+      <div class="app-box">
+        <img src="https://portal-dev.vinphaco.vn/download/sale.png" alt="D:\OneDrive - FPT Corporation\FPT\Flutter\VPC\download\Sale">
+        <h2 class="app-title">Sales App</h2>
+        <p class="app-description">App dành cho bán hàng của Vinphaco</p>
+        <a href="https://portal-dev.vinphaco.vn/download/sale/vpc_sale_uat.apk" class="download-btn android-btn">Download for Android</a>
+        <a href="itms-services://?action=download-manifest&url=https://portal-dev.vinphaco.vn/download/sale/manifest.plist" class="download-btn ios-btn">Download for iOS</a>
+      </div>
+
+      <!-- App 2 -->
+      <div class="app-box">
+        <img src="https://portal-dev.vinphaco.vn/download/delivery.png" alt="App 2 Logo">
+        <h2 class="app-title">Delivery App</h2>
+        <p class="app-description">App dành cho giao nhận của Vinphaco</p>
+        <a href="https://portal-dev.vinphaco.vn/download/delivery/vpc_delivery_uat.apk" class="download-btn android-btn">Download for Android</a>
+        <a href="itms-services://?action=download-manifest&url=https://portal-dev.vinphaco.vn/download/delivery/manifest.plist" class="download-btn ios-btn">Download for iOS</a>
+      </div>
+
+      <!-- App 3 -->
+      <div class="app-box">
+        <img src="https://portal-dev.vinphaco.vn/download/visit.png" alt="App 3 Logo">
+        <h2 class="app-title">Visit App</h2>
+        <p class="app-description">App dành cho viếng thăm của Vinphaco</p>
+        <a href="https://portal-dev.vinphaco.vn/download/visit/vpc_visit_uat.apk" class="download-btn android-btn">Download for Android</a>
+        <a href="itms-services://?action=download-manifest&url=https://portal-dev.vinphaco.vn/download/visit/manifest.plist" class="download-btn ios-btn">Download for iOS</a>
+      </div>
+    
+	
+	
+  
+  </div>
+
+  </div>
+
+</body>
+</html>
